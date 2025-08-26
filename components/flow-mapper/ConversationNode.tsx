@@ -132,7 +132,7 @@ export function ConversationNode({
           onClick={handleCreateBranch}
           title="Create Branch"
         >
-          <GitBranch className="h-3 w-3" />
+          <GitBranch className="h-3 w-3 text-accent-foreground" />
         </Button>
       </div>
 
@@ -164,7 +164,7 @@ export function ConversationNode({
       <CardContent className="pt-0 h-full overflow-hidden">
         <div className="space-y-3 h-full flex flex-col">
           {/* Message content */}
-          <div className="text-sm text-foreground leading-relaxed dark:text-slate-200 flex-1 overflow-hidden">
+          <div className="text-sm text-foreground leading-relaxed flex-1 overflow-hidden">
             <div className={`${isHovered ? "line-clamp-none overflow-y-auto max-h-24" : "line-clamp-3"} break-words`}>
               {isHovered ? node.content : truncateContent(node.content)}
             </div>
@@ -173,7 +173,7 @@ export function ConversationNode({
           {/* Emotions */}
           <div className="space-y-2 flex-shrink-0">
             <div className="flex items-center space-x-1">
-              <Zap className="w-3 h-3 text-muted-foreground dark:text-slate-400" />
+              <Zap className="w-3 h-3 text-muted-foreground " />
               <span className="text-xs text-muted-foreground font-medium">Emotions</span>
             </div>
             <div className="flex flex-wrap gap-1">

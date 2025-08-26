@@ -30,7 +30,7 @@ function EmotionBars({ emotions }: { emotions: Array<{ label: string; confidence
     <div className="space-y-1 mt-2">
       {emotions.map((emotion) => (
         <div key={emotion.label} className="flex items-center gap-2 text-xs opacity-60">
-          <span className="text-muted-foreground min-w-[60px] text-[10px]">{emotion.label}</span>
+          <span className="text-foreground min-w-[60px] text-[10px]">{emotion.label}</span>
           <div className="flex-1 bg-muted rounded-full h-0.5 overflow-hidden max-w-[80px]">
             <div
               className={`h-full transition-all duration-300 ${
@@ -39,7 +39,7 @@ function EmotionBars({ emotions }: { emotions: Array<{ label: string; confidence
               style={{ width: `${emotion.confidence}%` }}
             />
           </div>
-          <span className="text-[10px] text-muted-foreground min-w-[25px]">{emotion.confidence}%</span>
+          <span className="text-[10px] text-foreground min-w-[25px]">{emotion.confidence}%</span>
         </div>
       ))}
     </div>
@@ -224,7 +224,7 @@ export function ChatInterface({
           {isLoading && (
             <div className="flex justify-start">
               <Card className="max-w-[80%] p-3 bg-card">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2 text-sm text-foreground">
                   <div className="flex space-x-1">
                     <div className="w-2 h-2 bg-current rounded-full animate-bounce [animation-delay:-0.3s]"></div>
                     <div className="w-2 h-2 bg-current rounded-full animate-bounce [animation-delay:-0.15s]"></div>
@@ -257,7 +257,7 @@ export function ChatInterface({
             </Button>
           </PromptInputActions>
         </PromptInput>
-        <div className="mt-2 text-xs text-muted-foreground">Press Enter to send, Shift+Enter for new line</div>
+        <div className="mt-2 text-xs text-foreground">Press Enter to send, Shift+Enter for new line</div>
       </div>
     </div>
   )
