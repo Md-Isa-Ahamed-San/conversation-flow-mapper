@@ -32,7 +32,7 @@ To get started with the project, follow these steps:
 2.  **Install dependencies:**
     This project uses `pnpm` as the package manager. If you don't have it installed, you can find installation instructions [here](https://pnpm.io/installation).
     ```bash
-    npm install or pnpm install
+pnpm install
     ```
 
 ## Running the Project Locally
@@ -40,7 +40,7 @@ To get started with the project, follow these steps:
 Once the dependencies are installed, you can run the development server:
 
 ```bash
-npm run dev or pnpm run dev
+pnpm run dev
 ```
 
 This will start the application on `http://localhost:3000`. You can open this URL in your web browser to see the project running.
